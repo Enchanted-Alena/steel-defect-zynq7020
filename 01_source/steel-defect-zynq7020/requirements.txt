@@ -1,0 +1,5 @@
+# Complete script set requires Python 3.12; not a historical training lock.
+numpy>=1.20
+Pillow
+pyserial==3.5
+# Exact Windows/Python3.12 validation: requirements-validation-win-py312.lock

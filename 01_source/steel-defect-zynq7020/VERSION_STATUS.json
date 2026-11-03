@@ -1,0 +1,23 @@
+{
+  "Version": "B_SOURCE_CLOSEOUT_R3_1_C02_REVIEW_RC_20261102",
+  "SourceScope": "COMPLETE_SOURCE_WITH_USER_LOCAL_THIRD_PARTY_INPUTS",
+  "CodeAndInstructionsPrepared": true,
+  "EndToEndRebuildExecuted": false,
+  "SyntheticInterfaceValidation": true,
+  "AuthorizedRealModelThreeSampleOfflineValidation": true,
+  "BoardExecuted": false,
+  "NewHLSOrImplementationExecuted": false,
+  "Formal270Executed": false,
+  "FormalResultsReplaced": false,
+  "CReviewR3": "C02_CORE_REVIEWED_HOLD_FOR_DOCUMENT_FIXES",
+  "OriginalExactTrainingEnvironment": "HISTORICAL_DOCUMENTATION_FOUND_ORIGINAL_RUNTIME_EXPORT_AND_LOG_NOT_RETAINED",
+  "BaseR3SHA256": "a984d4121701315c11983bd05ad4c7b165d635200d0cb3fc35484707ad16ea6f",
+  "CReviewThisRevision": "PENDING_DIFFERENTIAL_REVIEW",
+  "SkillReview": "PENDING_EXTERNAL_SIX_FILE_REVIEW",
+  "PriorR3ThreeSampleBoardSupplement": true,
+  "NewCodeNumericalAlgorithmChanged": false,
+  "NewARMCompileExecuted": false,
+  "NewBoardSessionExecuted": false,
+  "FinalPublicSetApproved": false,
+  "RevisionTargetedSoftwareChecks": "PASS_SYNTAX_25_AST_SYNTHETIC_3_AND_NEGATIVE_LOCK_12"
+}

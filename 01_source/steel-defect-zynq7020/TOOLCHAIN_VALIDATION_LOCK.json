@@ -1,0 +1,13 @@
+{
+  "Version": "R3",
+  "HistoricalTrainingEnvironment": false,
+  "Platform": "Windows x64",
+  "Python": "3.12.14",
+  "Vivado": "2025.2 Build6299465",
+  "ARMGCC": "arm-xilinx-eabi-gcc.exe (GCC) 13.3.0",
+  "ARMGCCSHA256": "5564b16b151c1c8d626531440c538866aa938bdcecd7460be03ab6a43377a72f",
+  "HostGCC": "MinGW-w64 GCC14.2.0",
+  "PythonDependencies": "requirements-validation-win-py312.lock",
+  "BSP": "User provides original matched SDT standalone A9 BSP; hashes recorded per build",
+  "NoNewHLSOrImplementationRun": true
+}
