@@ -16,8 +16,6 @@ Skill继续绑定这份源码输入身份；本整包由根SHA256SUMS及外层�
 
 团队有权授权的源码及说明按Apache-2.0范围处理；原来源表、AMD链接脚本MIT声明和第三方说明原样保留。
 工具、IP、BSP、板级参考由使用者合法取得并本地生成；不捆绑私有模型/输入/Golden/逐样本日志或bit/XSA/ELF/DCP。
-报告图件、内部追溯ZIP、C原始视频、internal_audit及旧候选不属于这套源码+Skill集合。
-目标仓库由A提供并管理：https://github.com/Enchanted-Alena/steel-defect-zynq7020 。
 
 
 
