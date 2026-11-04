@@ -1,0 +1,340 @@
+{
+  "session_date": "2026-11-04",
+  "executor": "A-side Codex assistant taking over C tasks; not C and not an independent human tester",
+  "input_candidate_zip_sha256": "1d81078efc34f32bd99cd726612957afd492aebbbff58ae140e4c43c160f6246",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.3.5",
+    "pillow": "12.3.0",
+    "validator_pyyaml": "6.0.3",
+    "validator_dependency_note": "First attempt lacked PyYAML; second run adds an existing local PyYAML6.0.3 path for the validator only. No project source changed."
+  },
+  "python_syntax_pass_count": 25,
+  "validator_sha256": "6068513d924ed3559e186dfcdead7439129828dcf402167fd925c06dffbf2806",
+  "checks": [
+    {
+      "label": "help_make_interface_fixture",
+      "command": [
+        "<python>",
+        "-X",
+        "utf8",
+        "<repo>\\scripts\\make_interface_fixture.py",
+        "--help"
+      ],
+      "exit": 0,
+      "expected_success": true,
+      "passed": true,
+      "elapsed_seconds": 0.358,
+      "log_sha256": "84ddb6b81b01da3dde80debecef82c14727b9c657055d2b852b20c5592beaf87"
+    },
+    {
+      "label": "help_generate_user_payloads",
+      "command": [
+        "<python>",
+        "-X",
+        "utf8",
+        "<repo>\\scripts\\generate_user_payloads.py",
+        "--help"
+      ],
+      "exit": 0,
+      "expected_success": true,
+      "passed": true,
+      "elapsed_seconds": 0.366,
+      "log_sha256": "420d164d2b7dbf2fc28ffa8bbf8c2dd997819a76a0f9a5cbd1b576cf30a25fa8"
+    },
+    {
+      "label": "help_verify_user_payloads",
+      "command": [
+        "<python>",
+        "-X",
+        "utf8",
+        "<repo>\\scripts\\verify_user_payloads.py",
+        "--help"
+      ],
+      "exit": 0,
+      "expected_success": true,
+      "passed": true,
+      "elapsed_seconds": 0.307,
+      "log_sha256": "1f0540b8f5bf51545e98b202de915b8cc0b1c82df1231a103f6baa776d7dc31f"
+    },
+    {
+      "label": "help_build_user_firmware",
+      "command": [
+        "<python>",
+        "-X",
+        "utf8",
+        "<repo>\\scripts\\build_user_firmware.py",
+        "--help"
+      ],
+      "exit": 0,
+      "expected_success": true,
+      "passed": true,
+      "elapsed_seconds": 0.366,
+      "log_sha256": "91caead405bb191ef906625b4882aa303bb9a229a0a4fb0db68bd730f6139949"
+    },
+    {
+      "label": "skill_structure",
+      "command": [
+        "<python>",
+        "-X",
+        "utf8",
+        "<validator>",
+        "<skill_root>\\zynq7020-cnn-dma-debug"
+      ],
+      "exit": 0,
+      "expected_success": true,
+      "passed": true,
+      "elapsed_seconds": 0.158,
+      "log_sha256": "db349825903d66adffea3ecf1bd8e1803043e8a71cf1a051235dabc5371f5bb0"
+    },
+    {
+      "label": "fixture_create",
+      "command": [
+        "<python>",
+        "-X",
+        "utf8",
+        "<repo>\\scripts\\make_interface_fixture.py",
+        "--out",
+        "<work>\\software_check_v2\\fixture"
+      ],
+      "exit": 0,
+      "expected_success": true,
+      "passed": true,
+      "elapsed_seconds": 0.382,
+      "log_sha256": "e8618747550c700ec3912cf2a954630422ec26c3bbc06e807032d290e79e2e51"
+    },
+    {
+      "label": "generate_compatibility",
+      "command": [
+        "<python>",
+        "-X",
+        "utf8",
+        "<repo>\\scripts\\generate_user_payloads.py",
+        "--model",
+        "<work>\\software_check_v2\\fixture\\fixture_model.npz",
+        "--contract",
+        "<work>\\software_check_v2\\fixture\\fixture_contract.json",
+        "--inputs",
+        "<work>\\software_check_v2\\fixture\\inputs_int8.bin",
+        "--index",
+        "<work>\\software_check_v2\\fixture\\index.csv",
+        "--compatibility",
+        "--out",
+        "<work>\\software_check_v2\\payload"
+      ],
+      "exit": 0,
+      "expected_success": true,
+      "passed": true,
+      "elapsed_seconds": 0.593,
+      "log_sha256": "a186670197800a5d559b8a7468bee27f06892d166e91580b227fc5e274bc532b"
+    },
+    {
+      "label": "scalar_verify",
+      "command": [
+        "<python>",
+        "-X",
+        "utf8",
+        "<repo>\\scripts\\verify_user_payloads.py",
+        "--payload",
+        "<work>\\software_check_v2\\payload"
+      ],
+      "exit": 0,
+      "expected_success": true,
+      "passed": true,
+      "elapsed_seconds": 0.968,
+      "log_sha256": "a1be0f44a5c5b8b5a1e638677605806e67b6c8e337e89f7b536815b5debb6df4"
+    },
+    {
+      "label": "reject_three_in_default270",
+      "command": [
+        "<python>",
+        "-X",
+        "utf8",
+        "<repo>\\scripts\\generate_user_payloads.py",
+        "--model",
+        "<work>\\software_check_v2\\fixture\\fixture_model.npz",
+        "--contract",
+        "<work>\\software_check_v2\\fixture\\fixture_contract.json",
+        "--inputs",
+        "<work>\\software_check_v2\\fixture\\inputs_int8.bin",
+        "--index",
+        "<work>\\software_check_v2\\fixture\\index.csv",
+        "--out",
+        "<work>\\software_check_v2\\rejected_default270"
+      ],
+      "exit": 1,
+      "expected_success": false,
+      "passed": true,
+      "elapsed_seconds": 0.353,
+      "log_sha256": "763e87ba42ce9154826be0aaea7dc8be13c836728a1bcd0c5fa6b80314cf3ec8"
+    },
+    {
+      "label": "reject_overwrite",
+      "command": [
+        "<python>",
+        "-X",
+        "utf8",
+        "<repo>\\scripts\\generate_user_payloads.py",
+        "--model",
+        "<work>\\software_check_v2\\fixture\\fixture_model.npz",
+        "--contract",
+        "<work>\\software_check_v2\\fixture\\fixture_contract.json",
+        "--inputs",
+        "<work>\\software_check_v2\\fixture\\inputs_int8.bin",
+        "--index",
+        "<work>\\software_check_v2\\fixture\\index.csv",
+        "--compatibility",
+        "--out",
+        "<work>\\software_check_v2\\payload"
+      ],
+      "exit": 1,
+      "expected_success": false,
+      "passed": true,
+      "elapsed_seconds": 0.342,
+      "log_sha256": "062620387835a8a001d5945eff71611f4c19fd47dacf814dd779c3ad656835eb"
+    },
+    {
+      "label": "reject_protocol_wrong",
+      "command": [
+        "<python>",
+        "-X",
+        "utf8",
+        "<repo>\\scripts\\verify_user_payloads.py",
+        "--payload",
+        "<work>\\software_check_v2\\protocol_wrong"
+      ],
+      "exit": 1,
+      "expected_success": false,
+      "passed": true,
+      "elapsed_seconds": 0.354,
+      "log_sha256": "266b978283aef749d7927e50b901faef374752424c59d9a7a15573b473bebfdb"
+    },
+    {
+      "label": "reject_protocol_missing",
+      "command": [
+        "<python>",
+        "-X",
+        "utf8",
+        "<repo>\\scripts\\verify_user_payloads.py",
+        "--payload",
+        "<work>\\software_check_v2\\protocol_missing"
+      ],
+      "exit": 1,
+      "expected_success": false,
+      "passed": true,
+      "elapsed_seconds": 0.347,
+      "log_sha256": "266b978283aef749d7927e50b901faef374752424c59d9a7a15573b473bebfdb"
+    },
+    {
+      "label": "reject_formal_true",
+      "command": [
+        "<python>",
+        "-X",
+        "utf8",
+        "<repo>\\scripts\\verify_user_payloads.py",
+        "--payload",
+        "<work>\\software_check_v2\\formal_true"
+      ],
+      "exit": 1,
+      "expected_success": false,
+      "passed": true,
+      "elapsed_seconds": 0.562,
+      "log_sha256": "266b978283aef749d7927e50b901faef374752424c59d9a7a15573b473bebfdb"
+    },
+    {
+      "label": "reject_program_forbidden",
+      "command": [
+        "<python>",
+        "-X",
+        "utf8",
+        "<repo>\\scripts\\verify_user_payloads.py",
+        "--payload",
+        "<work>\\software_check_v2\\program_forbidden"
+      ],
+      "exit": 1,
+      "expected_success": false,
+      "passed": true,
+      "elapsed_seconds": 0.621,
+      "log_sha256": "266b978283aef749d7927e50b901faef374752424c59d9a7a15573b473bebfdb"
+    },
+    {
+      "label": "reject_session_false",
+      "command": [
+        "<python>",
+        "-X",
+        "utf8",
+        "<repo>\\scripts\\verify_user_payloads.py",
+        "--payload",
+        "<work>\\software_check_v2\\session_false"
+      ],
+      "exit": 1,
+      "expected_success": false,
+      "passed": true,
+      "elapsed_seconds": 0.516,
+      "log_sha256": "266b978283aef749d7927e50b901faef374752424c59d9a7a15573b473bebfdb"
+    },
+    {
+      "label": "reject_sample_zero",
+      "command": [
+        "<python>",
+        "-X",
+        "utf8",
+        "<repo>\\scripts\\verify_user_payloads.py",
+        "--payload",
+        "<work>\\software_check_v2\\sample_zero"
+      ],
+      "exit": 1,
+      "expected_success": false,
+      "passed": true,
+      "elapsed_seconds": 0.372,
+      "log_sha256": "f26c14e561d70d68d0a9c347a42dda1e28341d43656bc441b5607320835eed50"
+    },
+    {
+      "label": "reject_golden_hash_changed",
+      "command": [
+        "<python>",
+        "-X",
+        "utf8",
+        "<repo>\\scripts\\verify_user_payloads.py",
+        "--payload",
+        "<work>\\software_check_v2\\golden_hash_changed"
+      ],
+      "exit": 1,
+      "expected_success": false,
+      "passed": true,
+      "elapsed_seconds": 0.677,
+      "log_sha256": "fc5b56387d5776612acf15900bec7b4b74ec874d1bc14289af65d1b3cee7e463"
+    },
+    {
+      "label": "reject_golden_changed_and_rehashed",
+      "command": [
+        "<python>",
+        "-X",
+        "utf8",
+        "<repo>\\scripts\\verify_user_payloads.py",
+        "--payload",
+        "<work>\\software_check_v2\\golden_changed_and_rehashed"
+      ],
+      "exit": 1,
+      "expected_success": false,
+      "passed": true,
+      "elapsed_seconds": 1.165,
+      "log_sha256": "71113fdecf75ff8cf851d9e6e8d1fa1a73455d06ba8df293b9cd0a5c9169cb1c"
+    }
+  ],
+  "all_checks_passed": true,
+  "board_executed": false,
+  "hls_vivado_executed": false,
+  "arm_compile_executed": false,
+  "formal270_rerun": false,
+  "independent_human_trial": false,
+  "command_record_note": "Commands below use <repo>, <work>, <python> and <validator> in place of private local roots; they are parameterized command records, not raw shell transcripts.",
+  "log_sha256_scope": "Each checks[].log_sha256 is SHA-256 of captured stdout/stderr text encoded UTF-8 after universal newline normalization to LF; not raw log file bytes. All18 matched the received logs after that normalization.",
+  "published_log_files_sha256": {
+    "fixture_create.log": "8191cf756b9ce31b46f8bcd922b27b39f44e29457d93084ce6d77bffc437ac4f",
+    "generate_compatibility.log": "4758b2a29022c8d35b3bbed25df2f3587fbfc273a11de426938cefb529613546",
+    "scalar_verify.log": "873b9b70aaeba2d1cafb9a50854112f52e42c3d59203d3c76174047ca05f7e13",
+    "skill_structure.log": "6cf9e7f0d34ccd36dbd28f270cd28dd04277b2e1516bd4333ce7bb501d7b18d4"
+  },
+  "integration_note": "B verified incoming records and normalized hashes only; B did not rerun checks. Public file byte hashes are also bound by root SHA256SUMS."
+}
