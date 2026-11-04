@@ -40,7 +40,6 @@
 | 从零准备环境、构建与运行 | [复现操作索引](report/reproducibility_guide.md)、[源码REPRODUCE](01_source/steel-defect-zynq7020/REPRODUCE.md) |
 | 主张依据与软件验证记录 | [证据对应表](report/claim_evidence_map.csv)、[软件核对记录](report/validation/software_review_20261104.md) |
 
-仓库设计报告采用 Markdown，覆盖企业赛道 3.3.5.3 的内容要求，并附可浏览的图片、交互记录和复现入口。官网模板 Word 单独提交；两份报告的核心事实一致，结构和篇幅可以不同。本目录不附旧模板 Word/PDF，以免与官网最终稿混淆。
 
 ## 快速开始
 
