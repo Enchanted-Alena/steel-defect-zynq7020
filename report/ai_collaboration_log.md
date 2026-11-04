@@ -1,6 +1,6 @@
 # 历史大模型协作摘要
 
-当前版本说明（2026-11-04 R2增量）：以下案例保留B原120项候选的历史过程和当时状态；“待C”等不概括本轮当前状态。A已授权本助手接手相关补充并完成[软件核对](validation/software_review_20261104.md)，不冒充C独立审阅。逐字交互分别见[A记录](ai_collaboration_log_a.md)、[B提供的节选](ai_collaboration_log_b.md)。没有真人独立Skill试用记录。
+当前版本说明（2026-11-04 R2增量）：以下案例保留B原120项候选的历史过程和当时状态；“待C”等不概括本轮当前状态。A已授权本助手接手相关补充并完成[软件核对](validation/software_review_20261104.md)，不冒充C独立审阅。逐字交互分别见[A端WNS优化记录](ai_collaboration_log_a.md)、[B提供的节选](ai_collaboration_log_b.md)；A端原话可由[来源行号与片段哈希](a_wns_quote_records.csv)核对。没有真人独立Skill试用记录。
 
 GitHub仓库设计报告按企业赛道要求组织，官网报告按系统指定模板提交。两稿可采用不同结构和篇幅，但作品名、模型与平台、正式成绩、计时及统计口径、比较范围、验证边界和证据身份须一致。历史模板快照保留于团队既有版本；当前仓库以[Markdown主稿](design_report.md)为阅读入口，不再附旧模板文件。
 
