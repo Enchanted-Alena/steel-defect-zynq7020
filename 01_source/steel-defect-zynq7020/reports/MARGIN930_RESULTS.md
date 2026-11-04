@@ -4,7 +4,7 @@ Status: **board-tested submission candidate; public release pending**.
 
 ## Functional Closure
 
-The same bound Protocol 2.0 bit/XSA/ELF set was used for ISR smoke and the fixed 270-sample run. ARM, Protocol 2.0 `POST_OP=0` legacy PL, and Protocol 2.0 fused PL all produced 217/270 correct predictions (80.37%). The fused and legacy paths matched the frozen reference logits and stage checks in the private audit. Five approved ISR smoke scenarios passed. The private audit independently parsed 3,246 raw records.
+ISR smoke and the fixed 270-sample run used the same bound Protocol 2.0 bit/XSA and PS initialization, with separate smoke and full-suite ELF files. Their identities are retained in the private artifact-binding record. ARM, Protocol 2.0 `POST_OP=0` legacy PL, and Protocol 2.0 fused PL all produced 217/270 correct predictions (80.37%). The fused and legacy paths matched the frozen reference logits and stage checks in the private audit. Five approved ISR smoke scenarios passed. The private audit independently parsed 3,246 raw records.
 
 The 217/270 result is the frozen model's classification result, not an improvement produced by fusion.
 

@@ -1,5 +1,5 @@
 {
-  "Version": "B_SOURCE_CLOSEOUT_R3_1_C02_REVIEW_RC_20261102",
+  "Version": "A_REPOSITORY_UPLOAD_FINAL_20261104",
   "SourceScope": "COMPLETE_SOURCE_WITH_USER_LOCAL_THIRD_PARTY_INPUTS",
   "CodeAndInstructionsPrepared": true,
   "EndToEndRebuildExecuted": false,
@@ -12,12 +12,33 @@
   "CReviewR3": "C02_CORE_REVIEWED_HOLD_FOR_DOCUMENT_FIXES",
   "OriginalExactTrainingEnvironment": "HISTORICAL_DOCUMENTATION_FOUND_ORIGINAL_RUNTIME_EXPORT_AND_LOG_NOT_RETAINED",
   "BaseR3SHA256": "a984d4121701315c11983bd05ad4c7b165d635200d0cb3fc35484707ad16ea6f",
-  "CReviewThisRevision": "PENDING_DIFFERENTIAL_REVIEW",
-  "SkillReview": "PENDING_EXTERNAL_SIX_FILE_REVIEW",
+  "CReviewThisRevision": "CURRENT_A_AUTHORIZED_TAKEOVER_REVIEW_RECEIVED_NO_C_PERSONAL_SIGNOFF",
+  "SkillReview": "CURRENT_A_AUTHORIZED_TAKEOVER_REVIEW_RECEIVED_NO_C_PERSONAL_SIGNOFF",
   "PriorR3ThreeSampleBoardSupplement": true,
   "NewCodeNumericalAlgorithmChanged": false,
   "NewARMCompileExecuted": false,
   "NewBoardSessionExecuted": false,
   "FinalPublicSetApproved": false,
-  "RevisionTargetedSoftwareChecks": "PASS_SYNTAX_25_AST_SYNTHETIC_3_AND_NEGATIVE_LOCK_12"
+  "RevisionTargetedSoftwareChecks": "PASS_SYNTAX_25_AST_SYNTHETIC_3_AND_NEGATIVE_LOCK_12",
+  "HistoricalSourceVersion": "B_SOURCE_CLOSEOUT_R3_1_C02_REVIEW_RC_20261102",
+  "C04HistoricalReview": {
+    "SourceInputZIP_SHA256": "338f5a4272b5a3fc266976be402c16b80572c5123d502fcb06d1102860c65ea1",
+    "SkillMD_SHA256": "804f2c39b60866934bc66ecab5f0cf25fcfd354b78dc7f48410522520dacb55f",
+    "ReviewZIP_SHA256": "4fb19477805f7f04d26a270842482d6546f4ce52e92c67e5c2b68e3a7273eed9",
+    "SourceAndSetConclusion": "PASS_FOR_FINAL_PACKAGING_WITH_VERSION_GUARD",
+    "OldSkillConclusion": "PASS_STATIC_AND_TECHNICAL_REVIEW"
+  },
+  "IndependentHumanSkillTrial": "NOT_YET_TRIED_BY_ANOTHER_USER",
+  "ThisRoundExecutionScope": "DOCUMENTATION_AND_MANIFEST_ONLY_NO_PROJECT_EXECUTION",
+  "A10DocsAccepted": true,
+  "PreviousDocumentIntegrationVersion": "B_FULL_REPOSITORY_CANDIDATE_R3_20261104",
+  "CurrentReviewExecutor": "A_AUTHORIZED_CODEX_ASSISTANT_TAKEOVER_WITH_B_STATIC_INTEGRATION",
+  "CurrentCIndependentSignoff": false,
+  "ADelegatedSoftwareReviewInputZIP_SHA256": "1d81078efc34f32bd99cd726612957afd492aebbbff58ae140e4c43c160f6246",
+  "ADelegatedSoftwareChecksPassed": 18,
+  "ADelegatedPythonSyntaxFilesPassed": 25,
+  "ThisMergeReexecutedSoftwareChecks": false,
+  "CurrentReleaseDecision": "A_AUTHORIZED_DOCUMENT_CLOSEOUT_READY_FOR_MANUAL_UPLOAD",
+  "DocumentCloseoutBy": "A-authorized Codex assistant; documentation and manifests only; no C personal signoff",
+  "GitHubUploadPerformedThisRound": false
 }
